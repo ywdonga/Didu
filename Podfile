@@ -7,6 +7,8 @@ target 'Didu' do
 
   # Pods for Didu
   pod "MarkdownView"
-
+  pod 'SnapKit'
+  pod 'KeychainAccess'
+  pod 'DeviceKit'
 
 end

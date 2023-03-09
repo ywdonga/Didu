@@ -8,23 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		58424A3529B1F9FC00F6BF47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58424A3429B1F9FC00F6BF47 /* AppDelegate.swift */; };
-		58424A3729B1F9FC00F6BF47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58424A3629B1F9FC00F6BF47 /* SceneDelegate.swift */; };
-		58424A3929B1F9FC00F6BF47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58424A3829B1F9FC00F6BF47 /* ViewController.swift */; };
-		58424A3C29B1F9FC00F6BF47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58424A3A29B1F9FC00F6BF47 /* Main.storyboard */; };
 		58424A3E29B1F9FE00F6BF47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58424A3D29B1F9FE00F6BF47 /* Assets.xcassets */; };
 		58424A4129B1F9FE00F6BF47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58424A3F29B1F9FE00F6BF47 /* LaunchScreen.storyboard */; };
+		58AE27C629BA304D00436BF0 /* XDLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE27C529BA304D00436BF0 /* XDLoginManager.swift */; };
+		58AE27C829BA326800436BF0 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE27C729BA326800436BF0 /* LoginVC.swift */; };
+		58AE27CC29BA378700436BF0 /* AppleLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE27CB29BA378700436BF0 /* AppleLoginManager.swift */; };
 		720853E73583BD0812DD4711 /* Pods_Didu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E482B27C9FBBCF2BF280FD /* Pods_Didu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58424A3129B1F9FC00F6BF47 /* Didu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Didu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58424A3429B1F9FC00F6BF47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58424A3629B1F9FC00F6BF47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		58424A3829B1F9FC00F6BF47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		58424A3B29B1F9FC00F6BF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58424A3D29B1F9FE00F6BF47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58424A4029B1F9FE00F6BF47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58424A4229B1F9FE00F6BF47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58AE27BF29BA2F1800436BF0 /* Didu.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Didu.entitlements; sourceTree = "<group>"; };
+		58AE27C529BA304D00436BF0 /* XDLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XDLoginManager.swift; sourceTree = "<group>"; };
+		58AE27C729BA326800436BF0 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		58AE27CB29BA378700436BF0 /* AppleLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginManager.swift; sourceTree = "<group>"; };
 		60CA450BEFD03265EE20CACF /* Pods-Didu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Didu.release.xcconfig"; path = "Target Support Files/Pods-Didu/Pods-Didu.release.xcconfig"; sourceTree = "<group>"; };
 		68C4AD6AA4FB90898B1109CA /* Pods-Didu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Didu.debug.xcconfig"; path = "Target Support Files/Pods-Didu/Pods-Didu.debug.xcconfig"; sourceTree = "<group>"; };
 		C2E482B27C9FBBCF2BF280FD /* Pods_Didu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Didu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,7 +49,6 @@
 				68C4AD6AA4FB90898B1109CA /* Pods-Didu.debug.xcconfig */,
 				60CA450BEFD03265EE20CACF /* Pods-Didu.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +73,72 @@
 		58424A3329B1F9FC00F6BF47 /* Didu */ = {
 			isa = PBXGroup;
 			children = (
+				58AE27C129BA2FEC00436BF0 /* Module */,
+				58AE27C029BA2FDD00436BF0 /* Common */,
+				58AE27BF29BA2F1800436BF0 /* Didu.entitlements */,
 				58424A3429B1F9FC00F6BF47 /* AppDelegate.swift */,
-				58424A3629B1F9FC00F6BF47 /* SceneDelegate.swift */,
-				58424A3829B1F9FC00F6BF47 /* ViewController.swift */,
-				58424A3A29B1F9FC00F6BF47 /* Main.storyboard */,
 				58424A3D29B1F9FE00F6BF47 /* Assets.xcassets */,
 				58424A3F29B1F9FE00F6BF47 /* LaunchScreen.storyboard */,
 				58424A4229B1F9FE00F6BF47 /* Info.plist */,
 			);
 			path = Didu;
+			sourceTree = "<group>";
+		};
+		58AE27C029BA2FDD00436BF0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				58AE27C429BA304000436BF0 /* LoginManager */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		58AE27C129BA2FEC00436BF0 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				58AE27C229BA2FF400436BF0 /* Login */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		58AE27C229BA2FF400436BF0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				58AE27CA29BA374800436BF0 /* VM */,
+				58AE27C929BA374200436BF0 /* Model */,
+				58AE27C329BA2FFB00436BF0 /* VC */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		58AE27C329BA2FFB00436BF0 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				58AE27C729BA326800436BF0 /* LoginVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		58AE27C429BA304000436BF0 /* LoginManager */ = {
+			isa = PBXGroup;
+			children = (
+				58AE27C529BA304D00436BF0 /* XDLoginManager.swift */,
+			);
+			path = LoginManager;
+			sourceTree = "<group>";
+		};
+		58AE27C929BA374200436BF0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58AE27CA29BA374800436BF0 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				58AE27CB29BA378700436BF0 /* AppleLoginManager.swift */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 		C9EBE57C5F42DEF13938F825 /* Frameworks */ = {
@@ -154,7 +211,6 @@
 			files = (
 				58424A4129B1F9FE00F6BF47 /* LaunchScreen.storyboard in Resources */,
 				58424A3E29B1F9FE00F6BF47 /* Assets.xcassets in Resources */,
-				58424A3C29B1F9FC00F6BF47 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +263,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58424A3929B1F9FC00F6BF47 /* ViewController.swift in Sources */,
+				58AE27CC29BA378700436BF0 /* AppleLoginManager.swift in Sources */,
 				58424A3529B1F9FC00F6BF47 /* AppDelegate.swift in Sources */,
-				58424A3729B1F9FC00F6BF47 /* SceneDelegate.swift in Sources */,
+				58AE27C629BA304D00436BF0 /* XDLoginManager.swift in Sources */,
+				58AE27C829BA326800436BF0 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		58424A3A29B1F9FC00F6BF47 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58424A3B29B1F9FC00F6BF47 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		58424A3F29B1F9FE00F6BF47 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -355,23 +404,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Didu/Didu.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 23M2P3R2AH;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4Q396RLV2A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Didu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Didu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddsz.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TestDev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -384,23 +438,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = Didu/Didu.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 23M2P3R2AH;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 4Q396RLV2A;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Didu/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.Didu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ddsz.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = TestDev;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
