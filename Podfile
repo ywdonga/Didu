@@ -8,7 +8,10 @@ target 'Didu' do
   # Pods for Didu
   pod "MarkdownView"
   pod 'SnapKit'
-  pod 'KeychainAccess'
   pod 'DeviceKit'
-
+  pod 'ProgressHUD'
+  pod 'Toast-Swift'
+  # QMUI查看与修改 iOS App 里的 UI 对象
+  pod 'LookinServer', :configurations => ['Debug']
+  
 end
